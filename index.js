@@ -120,6 +120,7 @@ function removeFlavorByName(array, flavor) {
   console.log(array);
 }
 removeFlavorByName(originalFlavors, "Vanilla");
+
 /* Task 6: With all of these changes going on, we don't want to lose track of the actual, original 31 flavors. Write a function called copy that makes a copy of the array. 
 
 Your function should accept: 
@@ -130,8 +131,10 @@ and should return a new array that is identical to the old array. You can name t
 
 function copy(array, slicedArray) {
   slicedArray = array.slice();
-  console.log(slicedArray);
+  return slicedArray;
 }
+
+let slicedFlavors = [];
 
 copy(originalFlavors, slicedFlavors);
 
