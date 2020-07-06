@@ -32,8 +32,6 @@ var originalFlavors = [
   "Vanilla Burnt Almond",
 ];
 
-var testArray = ["something", "another something", "and another one"];
-
 /* Task 1: Confirm that the array is exactly 31 flavors. Your function should accept:
 
 (1) an array 
@@ -46,9 +44,9 @@ i.e. is31Flavors(originalFlavors) will return TRUE.*/
 
 function is31Flavors(array) {
   if (array.length === 31) {
-    console.log(`TRUE`);
+    return true;
   } else {
-    console.log(`FALSE`);
+    return false;
   }
 }
 
@@ -132,7 +130,6 @@ and should return a new array that is identical to the old array. You can name t
 
 function copy(array, slicedArray) {
   slicedArray = array.slice();
-  slicedArray = "";
   console.log(slicedArray);
 }
 
