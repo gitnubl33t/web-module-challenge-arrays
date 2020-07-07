@@ -154,14 +154,20 @@ DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 hint - you can use the .includes method to help you solve this */
 
 function filterByWord(array, flavor) {
-  let isFound = false;
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] == flavor) {
-      isFound = true;
-    }
+
+  let filteredArray = [];
+
+  for (i = 0; i = flavor; i++;){
+    
   }
-  return isFound;
+
+  array = array.includes(flavor);
+  array = filteredArray;
+
+  console.log(filteredArray);
 }
+
+
 
 filterByWord(originalFlavors, "Chocolate");
 
