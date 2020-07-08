@@ -156,12 +156,15 @@ hint - you can use the .includes method to help you solve this */
 function filterByWord(array, flavor) {
   let filteredArray = [];
 
-  for (i = 0; i < array.length; i++) {
-    if (array.includes(flavor) === true) {
-      filteredArray.push(flavor);
+  for (let i = 0; i < array.length; i++) {
+    let flavorIndex = [];
+    flavorIndex = array[i];
+
+    if (flavorIndex.includes(flavor)) {
+      filteredArray.push(array[i]);
     }
   }
-  console.log(filteredArray);
+  return filteredArray;
 }
 
 filterByWord(originalFlavors, "Chocolate");
